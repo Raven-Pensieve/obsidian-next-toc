@@ -38,6 +38,20 @@
 ### 🔨 Chore
 
 * 优化区分目录工具按钮和导航工具按钮的翻译文本 ([67d4b6a](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/67d4b6acbc8e9b3f16d313d811e6f1166d72a9fc))
+## [2.5.0](https://github.com/Raven-Pensieve/obsidian-next-toc/compare/2.4.0...2.5.0) (2026-10-26)
+
+
+### ✨ 新增功能 (Features)
+
+* 新增「标题颜色跟随主题」设置选项 ([#214](https://github.com/Raven-Pensieve/obsidian-next-toc/issues/214)) ([5eb9187](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/5eb9187db6d175a79f8ae215cdb47e0e429dbe72))
+
+
+### 🐛 问题修复 (Bug Fixes)
+
+* 修复图标的渲染显示 ([54cb79c](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/54cb79c3dfc0988f889ff09f8116315f4b983bc9))
+* 修复纵向分割窗格下浮动 TOC 底部被裁剪、无法滚动到末尾 ([#207](https://github.com/Raven-Pensieve/obsidian-next-toc/issues/207)) ([9c59eb0](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/9c59eb072f7e36500d3d20fd073f820af364599a))
+* 补全未完成的法语翻译 ([a231c08](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/a231c08c03ccd0dcda32527e72e3abe5a9423b66))
+
 ## [2.2.1](https://github.com/Raven-Pensieve/obsidian-next-toc/compare/2.2.0...2.2.1) (2026-07-02)
 
 
