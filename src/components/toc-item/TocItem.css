@@ -79,27 +79,27 @@
    各级目录项文本使用主题对应的标题颜色；激活项排除在外，
    保持容器 data-active 样式的 --interactive-accent 高亮。 */
 .NToc__toc-item-container--match-heading-color:not([data-active="true"]) {
-	&[data-actual-depth="0"] .NToc__toc-item-text {
+	&[data-level="1"] .NToc__toc-item-text {
 		color: var(--h1-color);
 	}
 
-	&[data-actual-depth="1"] .NToc__toc-item-text {
+	&[data-level="2"] .NToc__toc-item-text {
 		color: var(--h2-color);
 	}
 
-	&[data-actual-depth="2"] .NToc__toc-item-text {
+	&[data-level="3"] .NToc__toc-item-text {
 		color: var(--h3-color);
 	}
 
-	&[data-actual-depth="3"] .NToc__toc-item-text {
+	&[data-level="4"] .NToc__toc-item-text {
 		color: var(--h4-color);
 	}
 
-	&[data-actual-depth="4"] .NToc__toc-item-text {
+	&[data-level="5"] .NToc__toc-item-text {
 		color: var(--h5-color);
 	}
 
-	&[data-actual-depth="5"] .NToc__toc-item-text {
+	&[data-level="6"] .NToc__toc-item-text {
 		color: var(--h6-color);
 	}
 }
