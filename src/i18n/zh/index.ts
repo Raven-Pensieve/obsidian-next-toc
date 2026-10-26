@@ -103,6 +103,10 @@ const zh = {
 				name: "渲染 Markdown",
 				desc: "启用或禁用在目录中渲染 Markdown",
 			},
+			matchHeadingColor: {
+				name: "标题颜色跟随主题",
+				desc: "开启后，目录项按标题层级使用当前主题的标题颜色（H1~H6）；当前激活的标题仍显示高亮色",
+			},
 			showWhenSingleHeading: {
 				name: "单一标题时显示目录",
 				desc: "启用或禁用在文档仅有单一标题时显示目录",

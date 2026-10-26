@@ -107,6 +107,10 @@ const en = {
 				name: "Render Markdown syntax",
 				desc: "Enable or disable rendering Markdown syntax in the table of contents",
 			},
+			matchHeadingColor: {
+				name: "Match theme heading colors",
+				desc: "When enabled, TOC entries use the current theme's heading colors (H1-H6) by level; the active heading keeps its highlight color",
+			},
 			showWhenSingleHeading: {
 				name: "Show when single heading",
 				desc: "Enable or disable showing the table of contents when the document has only a single heading",

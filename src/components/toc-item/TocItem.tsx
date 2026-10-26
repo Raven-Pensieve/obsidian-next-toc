@@ -122,7 +122,7 @@ export const TocItem: FC<TocItemProps> = ({
 	return (
 		<div
 			ref={enableDrag ? setNodeRef : undefined}
-			className={`NToc__toc-item-container${isDragging ? " NToc__toc-item-container--dragging" : ""}${isDragOver && dragOverPosition === "before" ? " NToc__toc-item-container--drag-over-before" : ""}${isDragOver && dragOverPosition === "after" ? " NToc__toc-item-container--drag-over-after" : ""}${isDragReady ? " NToc__toc-item-container--drag-ready" : ""}`}
+			className={`NToc__toc-item-container${settings.render.matchHeadingColor ? " NToc__toc-item-container--match-heading-color" : ""}${isDragging ? " NToc__toc-item-container--dragging" : ""}${isDragOver && dragOverPosition === "before" ? " NToc__toc-item-container--drag-over-before" : ""}${isDragOver && dragOverPosition === "after" ? " NToc__toc-item-container--drag-over-after" : ""}${isDragReady ? " NToc__toc-item-container--drag-ready" : ""}`}
 			data-index={headingIndex}
 			data-level={heading.level}
 			data-actual-depth={headingActualDepth}
