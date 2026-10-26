@@ -94,11 +94,11 @@ const fr = {
 				desc: "Activer ou désactiver l'utilisation des numéros de titres dans la table des matières. Vous pouvez utiliser la propriété de document `cssclasses` pour contrôler l'affichage et le masquage (Priorité supérieure à la liste noire) : ",
 			},
 			numberingStartIndex: {
-				name: "TODO: 标题编号起始序号",
-				desc: "TODO: 选择标题编号是从 0 开始还是从 1 开始。",
+				name: "Index de départ de la numérotation des titres",
+				desc: "Choisir si la numérotation des titres commence à 0 ou à 1.",
 				options: {
-					zero: "TODO: 0",
-					one: "TODO: 1",
+					zero: "0",
+					one: "1",
 				},
 			},
 			skipHeadingLevels: {
