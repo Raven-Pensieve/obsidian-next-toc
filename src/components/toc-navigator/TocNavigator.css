@@ -1,3 +1,14 @@
+/* 挂载层：铺满所在编辑器窗格并作为尺寸容器，内部 cqh/cqw 以窗格为参考系而非整个窗口；
+   窗格被纵向分割变矮时 TOC 高度上限随之收缩，底部不会越过窗格边界被裁剪。
+   层本身穿透指针事件，由 .NToc__container 恢复交互。 */
+.NToc__view {
+	position: absolute;
+	inset: 0;
+	z-index: var(--layer-popover);
+	pointer-events: none;
+	container-type: size;
+}
+
 .NToc__container {
 	position: absolute;
 	top: calc(6% + var(--NToc__toc-offset-y));
@@ -6,6 +17,7 @@
 	flex-direction: column;
 	gap: 1.25rem;
 	z-index: var(--layer-popover);
+	pointer-events: auto; /* 挂载层已禁用指针事件，这里恢复 TOC 自身的交互 */
 	--NToc__toc-offset: 0px;
 	--NToc__toc-offset-y: 0%;
 
@@ -107,8 +119,8 @@
 	flex-direction: column;
 	background: transparent;
 	border-radius: 4px;
-	max-height: 75dvh;
-	min-height: 70dvh;
+	max-height: 75cqh;
+	min-height: 70cqh;
 	overflow-y: auto;
 	overscroll-behavior: contain;
 	-ms-overflow-style: none;
@@ -287,10 +299,10 @@
 	background: color-mix(in srgb, var(--background-primary) 90%, transparent);
 	border-radius: var(--radius-m);
 	box-shadow: var(--shadow-s);
-	min-width: 10dvw;
-	max-width: 80dvw;
-	max-height: 75dvh;
-	min-height: min(5dvh, 36px);
+	min-width: 10cqw;
+	max-width: 80cqw;
+	max-height: 75cqh;
+	min-height: min(5cqh, 36px);
 	overflow-y: auto;
 	overflow-x: hidden;
 	overscroll-behavior: contain;
@@ -340,8 +352,8 @@
 
 @media (max-width: 768px) {
 	.NToc__toc-items {
-		max-height: 20dvh;
-		max-width: 60dvw;
+		max-height: 20cqh;
+		max-width: 60cqw;
 		font-size: medium;
 	}
 
