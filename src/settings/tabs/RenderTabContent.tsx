@@ -128,6 +128,24 @@ export const RenderTabContent: FC = () => {
 
 			<ObsidianSetting
 				slots={{
+					name: LL.settings.render.matchHeadingColor.name(),
+					desc: LL.settings.render.matchHeadingColor.desc(),
+					control: (
+						<ObsidianSetting.Toggle
+							value={settings.render.matchHeadingColor}
+							onChange={async (value) => {
+								await settingsStore.updateSettingByPath(
+									"render.matchHeadingColor",
+									value,
+								);
+							}}
+						/>
+					),
+				}}
+			/>
+
+			<ObsidianSetting
+				slots={{
 					name: LL.settings.render.showWhenSingleHeading.name(),
 					desc: LL.settings.render.showWhenSingleHeading.desc(),
 					control: (

@@ -109,6 +109,10 @@ const fr = {
 				name: "Rendre la syntaxe Markdown",
 				desc: "Activer ou désactiver le rendu de la syntaxe Markdown dans la table des matières",
 			},
+			matchHeadingColor: {
+				name: "Couleurs des titres selon le thème",
+				desc: "Lorsqu'il est activé, les entrées de la table des matières utilisent les couleurs de titres du thème actuel (H1~H6) selon leur niveau ; le titre actif conserve sa couleur de surbrillance",
+			},
 			showWhenSingleHeading: {
 				name: "Afficher avec un seul titre",
 				desc: "Activer ou désactiver l'affichage de la table des matières lorsque le document n'a qu'un seul titre",

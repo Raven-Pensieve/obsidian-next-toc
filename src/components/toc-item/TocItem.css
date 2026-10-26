@@ -75,6 +75,35 @@
 	}
 }
 
+/* 「标题颜色跟随主题」开启时（容器由 TocItem 拼接 modifier）：
+   各级目录项文本使用主题对应的标题颜色；激活项排除在外，
+   保持容器 data-active 样式的 --interactive-accent 高亮。 */
+.NToc__toc-item-container--match-heading-color:not([data-active="true"]) {
+	&[data-actual-depth="0"] .NToc__toc-item-text {
+		color: var(--h1-color);
+	}
+
+	&[data-actual-depth="1"] .NToc__toc-item-text {
+		color: var(--h2-color);
+	}
+
+	&[data-actual-depth="2"] .NToc__toc-item-text {
+		color: var(--h3-color);
+	}
+
+	&[data-actual-depth="3"] .NToc__toc-item-text {
+		color: var(--h4-color);
+	}
+
+	&[data-actual-depth="4"] .NToc__toc-item-text {
+		color: var(--h5-color);
+	}
+
+	&[data-actual-depth="5"] .NToc__toc-item-text {
+		color: var(--h6-color);
+	}
+}
+
 .NToc__toc-item {
 	display: flex;
 	align-items: center;

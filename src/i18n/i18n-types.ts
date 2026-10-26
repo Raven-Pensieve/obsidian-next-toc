@@ -294,6 +294,16 @@ type RootTranslation = {
 				 */
 				desc: string
 			}
+			matchHeadingColor: {
+				/**
+				 * 标​题​颜​色​跟​随​主​题
+				 */
+				name: string
+				/**
+				 * 开​启​后​，​目​录​项​按​标​题​层​级​使​用​当​前​主​题​的​标​题​颜​色​（​H​1​~​H​6​）​；​当​前​激​活​的​标​题​仍​显​示​高​亮​色
+				 */
+				desc: string
+			}
 			showWhenSingleHeading: {
 				/**
 				 * 单​一​标​题​时​显​示​目​录
@@ -974,6 +984,16 @@ export type TranslationFunctions = {
 				name: () => LocalizedString
 				/**
 				 * 启用或禁用在目录中渲染 Markdown
+				 */
+				desc: () => LocalizedString
+			}
+			matchHeadingColor: {
+				/**
+				 * 标题颜色跟随主题
+				 */
+				name: () => LocalizedString
+				/**
+				 * 开启后，目录项按标题层级使用当前主题的标题颜色（H1~H6）；当前激活的标题仍显示高亮色
 				 */
 				desc: () => LocalizedString
 			}

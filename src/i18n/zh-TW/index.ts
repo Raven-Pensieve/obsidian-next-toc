@@ -103,6 +103,10 @@ const zh_TW = {
 				name: "渲染 Markdown",
 				desc: "啟用或停用在目錄中渲染 Markdown",
 			},
+			matchHeadingColor: {
+				name: "標題顏色跟隨主題",
+				desc: "開啟後，目錄項按標題層級使用目前主題的標題顏色（H1~H6）；目前作用中的標題仍顯示高亮色",
+			},
 			showWhenSingleHeading: {
 				name: "單一標題時顯示目錄",
 				desc: "啟用或停用在文件僅有單一標題時顯示目錄",

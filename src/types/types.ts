@@ -34,6 +34,7 @@ export interface IPluginSettings {
 		numberingStartIndex: number;
 		skipHeadingLevels: number[];
 		renderMarkdown: boolean;
+		matchHeadingColor: boolean;
 		showWhenSingleHeading: boolean;
 		hideHeadingNumberBlacklist: string[]; // Files that should hide heading numbers (only works when useHeadingNumber is true)
 		enableDragSort: boolean;
@@ -68,6 +69,7 @@ export const DEFAULT_SETTINGS: IPluginSettings = {
 		numberingStartIndex: 1,
 		skipHeadingLevels: [],
 		renderMarkdown: true,
+		matchHeadingColor: false,
 		showWhenSingleHeading: true,
 		hideHeadingNumberBlacklist: [],
 		enableDragSort: false,
