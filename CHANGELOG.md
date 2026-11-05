@@ -38,6 +38,13 @@
 ### 🔨 Chore
 
 * 优化区分目录工具按钮和导航工具按钮的翻译文本 ([67d4b6a](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/67d4b6acbc8e9b3f16d313d811e6f1166d72a9fc))
+## [2.5.1](https://github.com/Raven-Pensieve/obsidian-next-toc/compare/2.5.0...2.5.1) (2026-11-05)
+
+
+### 🐛 问题修复 (Bug Fixes)
+
+* use correct css selector for levels of colorful headings ([#218](https://github.com/Raven-Pensieve/obsidian-next-toc/issues/218)) ([e6b2339](https://github.com/Raven-Pensieve/obsidian-next-toc/commit/e6b23397927302a19b529aad750c409019d4ccb9))
+
 ## [2.5.0](https://github.com/Raven-Pensieve/obsidian-next-toc/compare/2.4.0...2.5.0) (2026-10-26)
 
 
